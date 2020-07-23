@@ -18,13 +18,13 @@
 
 1. ### [🎮](https://dict.emojiall.com/zh-hans/emoji/🎮)**GamePlay**
 
-   ![image-20200528142525635](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528142525635.png)
+   ![image-20200528142525635](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\pic1.png)
 
    - #### 内置了**7个关卡**(自己编辑以及借鉴`Battle City`中的一些关卡设计而成)
 
    - #### 支持原作中的森林/海洋/砖块/铁墙地形
 
-     <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528141612595.png" alt="image-20200528141612595" style="zoom:50%;" />
+     <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\pic2.png" alt="image-20200528141612595" style="zoom:50%;" />
 
    - #### 还原的道具系统:
 
