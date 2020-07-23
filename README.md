@@ -18,33 +18,33 @@
 
 1. ### [🎮](https://dict.emojiall.com/zh-hans/emoji/🎮)**GamePlay**
 
-   ![image-20200528142525635](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\pic1.png)
+   ![image-20200528142525635](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic1.png)
 
    - #### 内置了**7个关卡**(自己编辑以及借鉴`Battle City`中的一些关卡设计而成)
 
    - #### 支持原作中的森林/海洋/砖块/铁墙地形
 
-     <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\pic2.png" alt="image-20200528141612595" style="zoom:50%;" />
+     <img src="https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic2.png" style="zoom:50%;" />
 
    - #### 还原的道具系统:
 
-     ![image-20200528141921446](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528141921446.png)
+     ![image-20200528141921446](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic3.png)
 
    - #### 还原原作中的各种==动画==效果:
 
      - 出生:
 
-       <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528142144576.png" alt="image-20200528142144576" style="zoom:50%;" />
+       <img src="https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic4.png" alt="image-20200528142144576" style="zoom:50%;" />
 
      - 子弹碰撞动画:
 
-     ![image-20200528142325015](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528142325015.png)
+     ![image-20200528142325015](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic5.png)
 
        
 
      - 出生无敌效果:
 
-       ![image-20200528142428898](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528142428898.png)
+       ![image-20200528142428898](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic6.png)
 
    - #### **丰富的音效**:
 
@@ -66,9 +66,9 @@
 
    在这个版本中，我实现了在第二次课设中就想设计的地图编辑器功能，通过主菜单中的`CONSTRUCT`可以进入编辑家界面，在该界面中选择`MAKE`便可以进入编辑器模式。
 
-   <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528144123651.png" alt="image-20200528144123651" style="zoom:50%;" />
+   <img src="https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic7.png" style="zoom:50%;" />
 
-   <img src="C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528144139346.png" alt="image-20200528144139346" style="zoom:50%;" />
+   <img src="https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic8.png" style="zoom:50%;" />
 
    该地图编辑器界面如上所示，它支持：
 
@@ -146,7 +146,7 @@
 
 为了说明整体类的设计,下面使用`UML`图来具体说明:(如果对图中的箭头不清楚,[可以参见该网站](https://blog.csdn.net/CLinuxF/article/details/88060140))
 
-![image-20200528195448510](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528195448510.png)
+![image-20200528195448510](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic9.png)
 
 ####  2.2 具体设计——游戏部分
 
@@ -162,7 +162,7 @@
 
 ##### 2.2.1 `GameController`类
 
-![image-20200528160934253](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528160934253.png)
+![image-20200528160934253](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic10.png)
 
 可以看出，`GameController`（以下简称为控制类）的主要作用为：
 
@@ -187,7 +187,7 @@
 
 #####  2.1.2 `BaseTank`
 
-![image-20200528172503598](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528172503598.png)
+![image-20200528172503598](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic11.png)
 
 坦克基类，除了重载了`QGraphicsItem`必要的一些接口之外，其内部实现了一个简单的状态机，用于判断当前的坦克处于何种状态。该状态机通过`setState(TankState)`接口进行状态的变化，也可以通过`setALIVE()`等接口进行修改。坦克的状态如下：
 
@@ -201,13 +201,13 @@
 
 基于该基类，实现了`PlayerTank`类：
 
-![image-20200528182221735](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528182221735.png)
+![image-20200528182221735](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic12.png)
 
 相较于基类，主要在于添加了`getABuff`函数用于处理道具的相关逻辑。
 
 敌方坦克实现相对而言较为复杂，内部使用`A*`算法实现寻路，对外接口与`PlayerTank`没有太大区别：
 
-![image-20200528182157162](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528182157162.png)
+![image-20200528182157162](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic13.png)
 
 其内部接口参见注释：
 
@@ -229,7 +229,7 @@
 
 子弹类继承自`mapItem`：
 
-![image-20200528182145640](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528182145640.png)
+![image-20200528182145640](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic14.png)
 
 `shape(),paint()`等函数用于重载`QGraphicsItem`的相关接口，其中比较重要的接口为内部接口`move()`，其提供了`Bullet`碰撞检测的逻辑：
 
@@ -246,11 +246,11 @@
 
 地图编辑器通过`MapEditor`类进行控制（以下简称为控制器类），下图中左侧的地图元素为`EditmapItem`，右侧的地图元素为`ModelmapItem`。
 
-![image-20200528201024339](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528201024339.png)
+![image-20200528201024339](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic8.png)
 
 ##### 2.3.1 `EditmapItem`
 
-![image-20200528201437149](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528201437149.png)
+![image-20200528201437149](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic15.png)
 
 可编辑地图块继承自`mapItem`，其为上层提供了修改当前地图块类型的接口；为了实现撤销操作，其内部实现了一个记录状态的栈，并通过`recover()`接口恢复到栈顶的状态，通过`addType()`接口向状态栈中加入一个新的状态。
 
@@ -258,13 +258,13 @@
 
 ##### 2.3.2 `ModelMapItem`
 
-![image-20200528201632352](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528201632352.png)
+![image-20200528201632352](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic16.png)
 
 `ModelMapItem`同样继承自`mapItem`，其通过鼠标按下事件来使得自身被选中，从而在地图编辑器中使用该地形作图，`m_is_choosen`用于标记当前是否被选中。
 
 ##### 2.3.3 `MapEditor`
 
-![image-20200528201935829](C:\Users\联想\AppData\Roaming\Typora\typora-user-images\image-20200528201935829.png)
+![image-20200528201935829](https://github.com/Mellorsssss/BattleCity-/tree/master/imgaes/pic17.png)
 
 地图编辑器继承自`QGraphcisScene`，其内部记录了地图编辑器中可以编辑的`EditMapItem`的`QList`，以及模板地图块，还有用于撤销操作的一个队列。
 
